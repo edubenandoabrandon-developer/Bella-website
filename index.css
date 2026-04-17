@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 8%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 0 5px rgba(0,0,0.6);
+    backdrop-filter: blur(10px);
+}
+#sun{
+    font-size: 18px;
+}
+.menu{
+    display: none;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+.nav-links  a{
+    font-size: 20px;
+    color: #fff8f6;
+}
+.nav-links a:hover,.active{
+    color:#ff4d6d;
+    transition: 0.5s;
+}
+button{
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+}
+.logo{
+    font-size: 20px;
+    color: #fff;
+}
+span{
+    color: #ff4d6d;
+}
+.logo:hover{
+    border-bottom: 1px solid #ff4d6d;
+    transition: 0.3s;
+}
+.span{
+    border-bottom: none;
+}
+#home{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    background: url(saloon\ 1.jpg) no-repeat center/cover;
+}
+.home-btn{
+    padding: 12px;
+    background: #ff4d6d;
+    margin-top: 12px;
+    border-radius: 6px;
+    display: flex;
+   margin: auto;
+   margin-top: 20px;
+}
+.home-btn:hover{
+    background: #fff;
+    color: #ff4d6d;
+    transition: .5s;
+}
+#home-info h2{
+    margin-bottom: 20px;
+}
+#home-info p{
+    line-height: 1.2;
+    font-size: 20px;
+    font-weight: bold;
+}
+#about{
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+    min-height: 60vh;
+    margin-top: 30px;
+    padding: 60px 30px;
+}
+.about-info h2{
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+span{
+    border-bottom: 2px solid #ff4d6d;
+}
+.about-info{
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.about-info p{
+    max-width: 600px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+.about-box img{
+    width:28vw ;
+    height: 28vw;
+    object-fit: cover; 
+    border-radius: 50%;
+}
+#service{
+    padding: 60px 30px ;
+    text-align: center;
+}
+#service h3{
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+.service-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+.service-box{
+    margin-top: 20px;
+}
+.service-box p{
+    max-width: 300px;
+    margin-top: 6px;
+    line-height: 1.3;
+}
+.service-box h2{
+    margin-top: 6px;
+}
+.service-box img{
+    width: 290px;
+    height: 290px;
+    object-fit: cover;
+    box-shadow: 0 0 12px rgba(0,0,0.6);
+}
+.service-main{
+     display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+.service-boxes img{
+    width: 290px;
+    height: 290px;
+    object-fit: cover;
+    box-shadow: 0 0 12px rgba(0,0,0.6);
+}
+.service-boxes{
+    margin-top: 40px;
+}
+.service-boxes p{
+    max-width:300px;
+    margin-top: 6px;
+    line-height: 1.3;
+}
+.service-boxes h2{
+    margin-top: 6px;
+}
+.icon {
+    margin-top: 12px;
+}
+.icon i{
+    color: orange;
+    font-size: 18px;
+}
+.dark-mode,nav{
+    background: black;
+    color: white;
+}
+.dark-mode{
+        background: #121212;
+        color: white;
+}
+#contact{
+        padding: 60px 30px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #contact h2{
+        margin-bottom: 40px;
+    }
+    .contact-container{
+       width: 400px;
+    }
+    #form{
+        padding: 40px;
+        box-shadow: 0 0 12px rgba(0,0,0.3); 
+        border-radius: 6px;
+        flex-direction: column;
+    }
+    label{
+        display: block;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+     .input-box input{
+        width: 100%;
+        padding: 12px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid;
+    }
+    textarea{
+        width: 100%;
+        height: 130px;
+        padding: 10px;
+    }
+    .submit{
+        width: 100%;
+        background: #ff4d6d;
+        margin-top: 12px;
+        padding: 10px;
+        border-radius: 6px;
+    }
+    input.error{
+        border-color: red;
+        text-align: left;
+        display: block;
+        text-align: left;
+    }
+    input.success{
+        border-color: green;
+    }
+    small{
+        color: red;
+        font-size: 12px;
+
+    }
+    #gallery{
+        text-align: center;
+        padding: 60px 30px;
+    }
+    #gallery h2{
+        margin-bottom: 40px;
+        font-size: 30px;
+    }
+    .gallery-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 30px;
+    }
+    .gallery-box{
+        padding: 12px;
+    }
+    .gallery-box:hover{
+        transform: scale(1.2);
+        transition: 0.5s;
+    }
+    .gallery-box img{
+        width: 300px;
+        display: block;
+        height: 250px;
+        object-fit: cover;
+        box-shadow: 0 0 12px rgba(0,0,0.6);
+        margin: auto;
+    }
+    #booking-form{
+        text-align: center;
+        padding: 60px 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #booking-form h2{
+        margin-bottom: 30px;
+    }
+    .booking-container{
+        width: 400px;
+    }
+    #forms{
+        padding: 40px;
+        box-shadow: 0 0 12px black;
+        border-radius: 6px;
+    }
+    .box input{
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 6px;
+        border: 1px solid;
+        outline: none;
+    }
+    .sums{
+        width: 100%;
+        background: #ff4d6d;
+        margin-top: 12px;
+        padding: 10px;
+        border-radius: 6px;
+    }
+        @media(max-width:768px){
+    .menu{
+        display: block;
+        font-size: 25px;
+    }
+    .nav-links{
+        position: absolute;
+        top: 60px;
+        right: 0;
+        flex-direction: column;
+        width: 250px;
+        align-items: center;
+        border-radius: 6px;
+        box-shadow: 0 0 5px rgba(0,0,0.6);
+        backdrop-filter: blur(12px);
+        background: black;
+        display: none;
+    }
+    .nav-links li {
+        padding: 15px;
+    }
+    .nav-links.show{
+        display: flex;
+    }
+    #home{
+        padding: 60px 80px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+       #about{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 60px 80px;
+    }
+    .about-box img{
+        width: 40vw;
+        height: 40vw;
+        margin-top: 20px;
+       box-shadow:  0 0 20px #ff4d6d;
+    }
+    .about-box h2{
+        margin-bottom: 40px;
+    }
+    .about-box p{
+        max-width: 600px;
+        margin-top: 12px;
+        line-height: 1.2;
+    }
+    .service-container{
+        flex-direction: column;
+    }
+    .service-main{
+        flex-direction: column;
+    }
+    .contact-container{
+        max-width: 400px;
+        padding: 60px 20px;
+    }
+    .gallery-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+@media (max-width:448px){
+    #home{
+        align-items: center;
+        padding: 10px;
+    }
+    #home-info h2{
+        font-size: 20px;
+    }
+    #home-info p {
+        text-align: center;
+    }
+    #about{
+        padding: 20px;
+    }
+    .service-box img,.service-boxes img{
+        height: 150px;
+        width: 150px;
+    }
+    #gallery{
+        padding: 20px;
+    }
+    .gallery-box img{
+        width: 150px;
+        height: 150px;
+    }
+    .service-box p,.service-boxes p{
+        max-width: 200px;
+    }
+}

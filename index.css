@@ -407,4 +407,11 @@ span{
     .service-box p,.service-boxes p{
         max-width: 200px;
     }
+    #forms{
+       max-width: 350px;
+    }
+    .booking-container{
+        padding: 30px;
+    }
+
 }

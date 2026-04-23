@@ -9,6 +9,7 @@
 html{
     scroll-behavior: smooth;
 }
+/* nav */
 .nav{
     display: flex;
     align-items: center;
@@ -61,13 +62,14 @@ span{
 .span{
     border-bottom: none;
 }
+/* home */
 #home{
     display: flex;
     align-items: center;
     height: 100vh;
     justify-content: center;
     text-align: center;
-    background: url(saloon\ 1.jpg) no-repeat center/cover;
+   background: linear-gradient(to right,rgba(17, 17, 16, 0.9),rgba(35, 35, 34, 0.7)), url(saloon\ 1.jpg)no-repeat center/cover;
 }
 .home-btn{
     padding: 12px;
@@ -84,13 +86,18 @@ span{
     transition: .5s;
 }
 #home-info h2{
-    margin-bottom: 20px;
+    max-width: 700px;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    color: #fff;
 }
 #home-info p{
     line-height: 1.2;
-    font-size: 20px;
     font-weight: bold;
+    color: #fff;
 }
+/* about */
 #about{
    display: flex;
    justify-content: center;
@@ -122,6 +129,7 @@ span{
     object-fit: cover; 
     border-radius: 50%;
 }
+/* service */
 #service{
     padding: 60px 30px ;
     text-align: center;
@@ -193,6 +201,7 @@ span{
         background: #121212;
         color: white;
 }
+/* contact */
 #contact{
         padding: 60px 30px;
         text-align: center;
@@ -207,6 +216,7 @@ span{
     .contact-container{
        width: 400px;
     }
+    /* form */
     #form{
         padding: 40px;
         box-shadow: 0 0 12px rgba(0,0,0.3); 
@@ -252,6 +262,7 @@ span{
         font-size: 12px;
 
     }
+    /* gallery */
     #gallery{
         text-align: center;
         padding: 60px 30px;
